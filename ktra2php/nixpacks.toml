@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["php81"]
+
+[phases.build]
+cmds = [
+  "echo 'Skipping composer install'",
+  "chmod +x start.sh"
+]
+
+[start]
+cmd = "./start.sh" 
